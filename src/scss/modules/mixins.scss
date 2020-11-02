@@ -1,0 +1,12 @@
+
+@mixin flex-content-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-content-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

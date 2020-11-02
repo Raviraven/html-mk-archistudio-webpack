@@ -1,6 +1,12 @@
 @import "~normalize.css";
 
 @import "_variables";
+@import "modules/hello.scss";
+@import "modules/buildings.scss";
+@import "modules/development.scss";
+@import "modules/others.scss";
+@import "modules/visualizations.scss";
+@import "modules/finished.scss";
+@import "modules/contact.scss";
+@import "modules/map.scss";
 
-body {
-}

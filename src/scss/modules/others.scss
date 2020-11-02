@@ -1,0 +1,7 @@
+@import "mixins.scss";
+@import "../variables.scss";
+
+.others {
+    height: $section_height;
+    @include flex-content-right;
+}

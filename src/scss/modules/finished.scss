@@ -1,0 +1,6 @@
+@import "mixins.scss";
+@import "../variables.scss";
+
+.finished {
+    height: $section_height;
+}
