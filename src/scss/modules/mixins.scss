@@ -10,3 +10,22 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+@mixin section-background-image {
+    z-index: 0;
+
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin section-text {
+    z-index: 1;
+    background: white;
+
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+}

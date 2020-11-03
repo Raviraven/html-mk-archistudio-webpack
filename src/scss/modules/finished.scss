@@ -3,4 +3,26 @@
 
 .finished {
     height: $section_height;
+
+    &__description{
+
+    }
+
+    &__header {
+
+    }
+
+    &__images {
+        //width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+        &--image {
+            //height: 25%;
+            width: 40%;
+            margin: 8px;
+        }
+    }
 }

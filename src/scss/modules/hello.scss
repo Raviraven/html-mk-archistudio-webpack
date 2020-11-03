@@ -1,9 +1,16 @@
+@import "mixins.scss";
+
 .hello {
     height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    color: white;
+    background: gray;
+
+    position: relative;
 
     &__description {
 
@@ -18,7 +25,14 @@
     }
 
     &__image{
+        opacity: 35%;
+        // width: 99vw;
 
+        @include section-background-image;
+    }
+
+    &__text {
+        z-index: 1;
     }
 
 }

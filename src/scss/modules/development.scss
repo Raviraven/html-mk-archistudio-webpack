@@ -4,4 +4,24 @@
 .development {
     height: $section_height;
     @include flex-content-left;
+
+    position: relative;
+
+    &__description {
+        &--item {
+
+        }
+    }
+
+    &__header {
+
+    }
+
+    &__image {
+        @include section-background-image;
+    }
+
+    &__text {
+        @include section-text;
+    }
 }

@@ -4,4 +4,25 @@
 .buildings {
     height: $section_height;
     @include flex-content-right;
+    
+    position: relative;
+
+    &__description {
+        &--item {
+
+        }
+    }
+
+    &__header {
+
+    }
+
+    &__image {
+        z-index: -1;
+        @include section-background-image;
+    }
+
+    &__text {
+        @include section-text;
+    }
 }
