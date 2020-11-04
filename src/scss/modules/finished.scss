@@ -3,9 +3,11 @@
 
 .finished {
     height: $section_height;
+    text-align: center;
+    padding-top: 48px;
 
     &__description{
-
+        margin-bottom: 64px;
     }
 
     &__header {
