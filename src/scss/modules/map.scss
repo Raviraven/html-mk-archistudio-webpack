@@ -2,5 +2,12 @@
 @import "../variables.scss";
 
 .map {
-    height: $section_height;
+    //height: $section_height;
+    padding:32px;
+    text-align: center;
+
+    &__map {
+        height: 70vh;
+        padding: 32px;
+    }
 }

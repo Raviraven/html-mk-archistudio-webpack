@@ -1,13 +1,12 @@
 import '../scss/main.scss';
- import fontawesome from '@fortawesome/fontawesome-free'
-// import regular from '~@fortawesome/free-regular-svg-icons'
-// import solid from '~@fortawesome/free-solid-svg-icons'
-// import brands from '~@fortawesome/free-brands-svg-icons'
-
-// fontawesome.library.add(regular)
-// fontawesome.library.add(solid)
-// fontawesome.library.add(brands)
-
-/* place your code below */
 
 console.log('HELLO 🚀')
+
+function initMap() {
+    var uluru = {lat: 53.112874, lng: 23.146849};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 15, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+window.initMap = initMap;
