@@ -49,7 +49,7 @@
         <img src="../assets/img/2.jpg" class="buildings__image" alt="Przykładowy budynek mieszkalny" />
       </section>
       
-      <section class="development">
+      <section id="development" class="development">
         <div class="development__text">
           <h2 class="development__header">Rozbudowy, przebudowy i nadbudowy obiektów</h2>
           <ul class="development__description">
@@ -61,7 +61,7 @@
         <img src="../assets/img/3.jpg" class="development__image" alt="Przykładowa rozbudowa" />
       </section>
       
-      <section class="others">
+      <section id="others" class="others">
         <div class="others__text">
         <h2 class="others__header">Inne obiekty</h2>
         <ul class="others__description">
@@ -72,7 +72,7 @@
         <img src="../assets/img/4.jpg" class="others__image" alt="Przykładowy budynek gospodarczy"/>
       </section>
       
-      <section class="visualizations">
+      <section id="visualizations" class="visualizations">
         <div class="visualizations__text">
         <h2 class="visualizations__header">Wizualizacje</h2>
         <p class="visualizations__description">Oferuję także wykonanie wizualizacji zarówno zewnątrz obiektu jak i wnętrz konkretnych pomieszczeń. Szybki czas realizacji oraz konkurencyjne ceny :)</p>
@@ -81,7 +81,7 @@
     </section>
     
     
-    <section class="finished">
+    <section id="finished" class="finished">
       <h2 class="finished__header">Realizacje</h2>
       <p class="finished__description">Obiekty w realizacji lub ukończone</p>
       <div class="finished__images">
@@ -117,7 +117,7 @@
       </div>
     </section>
     
-    <section class="map">
+    <section id="map" class="map">
       <h2 class="map__header">Mapa</h2>
       <p class="map__description">Proszę o kontakt przed spotkaniem</p>
       <div id="map" class="map__map"></div>
@@ -128,6 +128,19 @@
   <footer class="footer">
     <p>Created by: Michał Kruszewski</p>
   </footer>
+
+  <div class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__list--item"><a href="#hello">Hello</a></li>
+      <li class="navigation__list--item"><a href="#buildings"></a></li>
+      <li class="navigation__list--item"><a href="#development"></a></li>
+      <li class="navigation__list--item"><a href="#others"></a></li>
+      <li class="navigation__list--item"><a href="#visualizations"></a></li>
+      <li class="navigation__list--item"><a href="#finished"></a></li>
+      <li class="navigation__list--item"><a href="#contact"></a></li>
+      <li class="navigation__list--item"><a href="#map"></a></li>
+    </ul>
+  </div>
 
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFtZdr4mOV11mfvxYXjBVDYWquwqgCqOQ&callback=initMap">

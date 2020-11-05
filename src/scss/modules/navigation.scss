@@ -1,0 +1,33 @@
+@import "mixins.scss";
+@import "../variables.scss";
+
+.navigation {
+    position: fixed;
+    top: 50%;
+    margin-top: -180px;
+    right: 32px;
+    z-index: 10;
+
+    &__list{
+        &--item {
+            list-style: none;
+        }
+
+        &--item > a{
+            background: #aaa;
+            border-radius: 10px;
+            display: block;
+            height: 15px;
+            overflow: hidden;
+            text-indent: 100%;
+            white-space: nowrap;
+            width: 15px;
+
+            margin-bottom: 16px;
+        }
+
+        &--item > a:hover{
+            background-color: green;
+        }
+    }
+}
