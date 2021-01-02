@@ -31,6 +31,7 @@
     &__modal {
         display: flex;
         align-items: center;
+        justify-content: center;
 
         transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
         position: fixed;
@@ -42,7 +43,7 @@
         background-color: rgba(0, 0, 0, 0.75);
         visibility: none;
         opacity: 0;
-        z-index: 0;
+        z-index: -999;
 
         &--img {
             display: block;
