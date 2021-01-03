@@ -35,7 +35,8 @@
 
         &--link{
             text-decoration: none;
-            color: green;
+            //color: green;
+            color: rgb(136, 138, 86);
 
             font-size: 40px;
         }
@@ -46,17 +47,17 @@
             height: $social_border_size;
             line-height: $social_border_size;
             width: $social_border_size;
-            box-shadow: inset 0 0 0 $social_border_box_width rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 0 0 $social_border_box_width  rgb(136, 138, 86);
         }
 
         &--link:hover::before {
-            box-shadow: inset 0 0 0 $social_border_box_width rgba(139, 108, 16, 0.2);
+            box-shadow: inset 0 0 0 $social_border_box_width  rgb(203, 205, 161);
         }
 
         &--social {
             width: 30%;
             border-left: 0;
-            border-color: rgba(0, 0, 0, 0.2);
+            border-color:  rgb(203, 205, 161);
             border-style: solid;
             border-right-width: 1px;
             border-top-width: 0;
