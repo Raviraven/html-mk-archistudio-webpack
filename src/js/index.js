@@ -1,6 +1,6 @@
 import '../scss/main.scss';
 
-console.log('HELLO 🚀')
+console.log('Welcome to the dark side 😈')
 
 window.initMap = initMap;
 
