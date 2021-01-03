@@ -4,7 +4,10 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 // @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 @import "_variables";
 @import "modules/hello.scss";
@@ -19,7 +22,8 @@
 @import "modules/nav.scss";
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 
 }
