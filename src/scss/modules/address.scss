@@ -1,0 +1,28 @@
+@import "mixins.scss";
+@import "../variables.scss";
+
+.address {
+    height: $section_height;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10rem 32px 32px 32px;
+
+
+    &__description {
+
+    }
+    
+    &__header{
+        font-family: 'Playfair Display', serif;
+    }
+
+    &__link {
+        &--image {
+
+        }
+    }
+}
