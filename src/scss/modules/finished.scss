@@ -4,7 +4,9 @@
 .finished {
     height: $section_height;
     text-align: center;
-    padding-top: 48px;
+    //padding-top: 48px;
+    padding-top: 10rem;
+
 
     &__description{
         margin-bottom: 64px;
@@ -25,6 +27,8 @@
             //height: 25%;
             width: 40%;
             margin: 8px;
+            height: 300px;
+            object-fit: cover;
         }
     }
 
