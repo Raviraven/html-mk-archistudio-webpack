@@ -21,6 +21,10 @@
 @import "modules/nav.scss";
 @import "modules/address.scss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     //font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
