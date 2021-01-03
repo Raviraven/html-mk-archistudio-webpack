@@ -5,6 +5,10 @@
     align-items: flex-start;
     
     padding: 3rem;
+
+    @media (max-width: $tablet) {
+        padding: 0 1rem 1rem 1rem;
+    }
 }
 
 @mixin flex-content-right {
@@ -13,6 +17,10 @@
     align-items: flex-start;
     
     padding: 3rem;
+
+    @media (max-width: $tablet) {
+        padding: 0 1rem 1rem 1rem;
+    }
 }
 
 @mixin section-background-image {
@@ -20,6 +28,11 @@
     height: 800px;
     width: 100%;
     object-fit: cover;
+
+    @media (max-width: $desktop){
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @mixin section-text {
@@ -32,4 +45,9 @@
     margin: 16px;
     padding: 16px;
     border-radius: 16px;
+
+    @media (max-width: $tablet){
+        position: unset;
+        margin: 0;
+    }
 }

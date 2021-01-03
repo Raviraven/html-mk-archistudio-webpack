@@ -8,6 +8,10 @@
     right: 32px;
     z-index: 10;
 
+    @media (max-width: $tablet){
+        display: none;
+    }
+
     &__list{
         &--item {
             list-style: none;
@@ -27,7 +31,7 @@
         }
 
         &--item > a:hover{
-            background-color: green;
+            background-color: rgb(136, 138, 86);
         }
     }
 }

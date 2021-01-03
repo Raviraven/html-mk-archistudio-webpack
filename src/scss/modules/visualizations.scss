@@ -5,13 +5,27 @@
     height: $section_height;
     @include flex-content-left;
     position: relative;
-    padding-top: 10rem;
+    padding-top: $nav_logo_height;
+
+    @media (max-width: $desktop){
+        height: auto;
+        padding-top: $nav_logo_tablet_height;
+    }
+
+    @media (max-width: $tablet){
+        flex-direction: column;
+        padding-top: $nav_logo_mobile_height;
+    }
 
     &__description {
     }
 
     &__header { 
         font-family: 'Playfair Display', serif;
+
+        @media (max-width: $tablet){
+            font-size: 1.25rem;
+        }
     }
 
     &__image {

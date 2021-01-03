@@ -12,18 +12,35 @@
     //use padding OR flex
     //padding: 128px 0 0 0;
 
+    @media (max-width: $desktop){
+        height: auto;
+        padding-top: $nav_logo_tablet_height;
+    }
+
+    @media (max-width: $tablet){
+        padding-top: $nav_logo_mobile_height;
+    }
+
     &__description {
         margin-bottom: 128px;
     }
 
     &__header {
         font-family: 'Playfair Display', serif;
+
+        @media (max-width: $tablet){
+            font-size: 1.25rem;
+        }
     }
 
     &__socials {
         display: flex;
         justify-content: space-around;
 
+        @media(max-width: $tablet){
+            flex-direction: column;
+            align-items: center;
+        }
 
         &--description {
 
@@ -63,8 +80,18 @@
             border-top-width: 0;
             border-bottom-width: 0;
 
+            @media (max-width: $tablet){
+                border: none;
+                padding-bottom: 2rem;
+                width: 100%;
+            }
+
             &--last {
                 border: none;
+
+                @media (max-width: $tablet) {
+                    padding-bottom: auto;
+                }
             }
         }
     }

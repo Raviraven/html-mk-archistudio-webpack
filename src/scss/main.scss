@@ -30,6 +30,9 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
 
+    @media (max-width: $tablet){
+        font-size: 1rem;
+    }
 }
 
 .footer {

@@ -2,11 +2,16 @@
 @import "../variables.scss";
 
 .finished {
-    //height: $section_height;
     text-align: center;
-    //padding-top: 48px;
-    padding-top: 10rem;
+    padding-top: $nav_logo_height;
 
+    @media (max-width: $desktop){
+        padding-top: $nav_logo_tablet_height;
+    }
+
+    @media (max-width: $tablet){
+        padding-top: $nav_logo_mobile_height;
+    }
 
     &__description{
         margin-bottom: 64px;
@@ -14,6 +19,10 @@
 
     &__header {
         font-family: 'Playfair Display', serif;
+
+        @media (max-width: $tablet){
+            font-size: 1.25rem;
+        }
     }
 
     &__images {
@@ -22,6 +31,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        @media(max-width: $tablet){
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
 
         &--image {
             //height: 25%;
@@ -29,6 +43,12 @@
             margin: 8px;
             height: 300px;
             object-fit: cover;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                margin: 0 0 8px 0;
+                height: auto;
+            }
         }
     }
 

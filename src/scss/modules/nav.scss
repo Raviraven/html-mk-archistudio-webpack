@@ -11,6 +11,14 @@
     justify-content: center;
     
     &__logo {
-        height: 10rem;
+        height: $nav_logo_height;
+
+        @media (max-width: $desktop){
+            height: $nav_logo_tablet_height;
+        }
+
+        @media (max-width: $tablet) {
+            height: $nav_logo_mobile_height;
+        }
     }
 }

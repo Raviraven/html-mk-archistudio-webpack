@@ -9,12 +9,20 @@
 
     padding: 0 2rem 2rem 2rem;
 
-    &__description {
+    @media (max-width: $desktop){
+        height: auto;
+    }
 
+    &__description {
+        // @media (max-width: $tablet){
+        //     font-size: 1rem;
+        // }
     }
 
     &__footer {
-
+        // @media (max-width: $tablet){
+        //     font-size: 1rem;
+        // }
     }
 
     &__header {
@@ -22,13 +30,14 @@
     }
 
     &__image{
-        //opacity: 35%;
-        // width: 99vw;
-
         @include section-background-image;
         height: 700px;
         width: 100%;
 
+        // @media (max-width: $desktop){
+        //     height: 100%;
+        //     width: 100%;
+        // }
     }
 
     &__text {
