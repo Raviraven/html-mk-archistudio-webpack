@@ -1,16 +1,17 @@
 @import "mixins.scss";
 
 .hello {
-    height: 100vh;
+    height: 90vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    color: white;
-    background: gray;
+    padding: 4rem;//same as nav bar height!
+    //color: white;
+    //background: gray;
 
-    position: relative;
+    //position: relative;
 
     &__description {
 
@@ -25,10 +26,13 @@
     }
 
     &__image{
-        opacity: 35%;
+        //opacity: 35%;
         // width: 99vw;
 
         @include section-background-image;
+        height: 700px;
+        width: 100%;
+
     }
 
     &__text {
