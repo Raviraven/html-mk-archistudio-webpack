@@ -23,6 +23,10 @@
 
     &__description {
         margin-bottom: 128px;
+
+        @media (max-width: $tablet){
+            margin-bottom: 4rem;
+        }
     }
 
     &__header {
