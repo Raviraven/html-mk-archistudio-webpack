@@ -2,87 +2,87 @@
 @import "../variables.scss";
 
 .finished {
-    text-align: center;
-    padding-top: $nav_logo_height;
+  text-align: center;
+  padding-top: $nav_logo_height;
 
-    @media (max-width: $desktop){
-        padding-top: $sections_padding_top_tablet;
+  @media (max-width: $desktop) {
+    padding-top: $sections_padding_top_tablet;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: $sections_padding_top_mobile;
+  }
+
+  &__description {
+    margin-bottom: 64px;
+  }
+
+  &__header {
+    font-family: "Playfair Display", serif;
+    margin-top: 1rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__images {
+    //width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
     }
 
-    @media (max-width: $tablet){
-        padding-top: $sections_padding_top_mobile;
-    }
+    &--image {
+      //height: 25%;
+      width: 40%;
+      margin: 8px;
+      height: 300px;
+      object-fit: cover;
+      cursor: pointer;
 
-    &__description{
-        margin-bottom: 64px;
-    }
-
-    &__header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 1rem;
-
-        @media (max-width: $tablet){
-            font-size: 1.25rem;
-        }
-    }
-
-    &__images {
-        //width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        @media(max-width: $tablet){
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-        }
-
-        &--image {
-            //height: 25%;
-            width: 40%;
-            margin: 8px;
-            height: 300px;
-            object-fit: cover;
-            cursor: pointer;
-
-            @media (max-width: $tablet) {
-                width: 100%;
-                margin: 0 0 8px 0;
-                height: auto;
-            }
-        }
-    }
-
-    &__modal {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
-        position: fixed;
-        top: 0;
-        left: 0;
+      @media (max-width: $tablet) {
         width: 100%;
-        height: 100%;
-        outline: 0;
-        background-color: rgba(0, 0, 0, 0.75);
-        visibility: none;
-        opacity: 0;
-        z-index: -999;
-
-        &--img {
-            display: block;
-            max-width: 90vw;
-            max-height: 85vh;
-            box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
-        }
-
-        &--visible {
-            pointer-events: auto;
-            visibility: visible;
-            opacity: 1;
-            z-index: 10001;
-        }
+        margin: 0 0 8px 0;
+        height: auto;
+      }
     }
+  }
+
+  &__modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    visibility: none;
+    opacity: 0;
+    z-index: -999;
+
+    &--img {
+      display: block;
+      max-width: 90vw;
+      max-height: 85vh;
+      box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+    }
+
+    &--visible {
+      pointer-events: auto;
+      visibility: visible;
+      opacity: 1;
+      z-index: 10001;
+    }
+  }
 }

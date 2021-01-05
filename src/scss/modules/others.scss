@@ -2,40 +2,39 @@
 @import "../variables.scss";
 
 .others {
-    height: $section_height;
-    @include flex-content-right;
-    position: relative;
-    padding-top: $nav_logo_height;
+  height: $section_height;
+  @include flex-content-right;
+  position: relative;
+  padding-top: $nav_logo_height;
 
-    @media (max-width: $desktop){
-        height: auto;
-        padding-top: $sections_padding_top_tablet;
+  @media (max-width: $desktop) {
+    height: auto;
+    padding-top: $sections_padding_top_tablet;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    padding-top: $sections_padding_top_mobile;
+  }
+
+  &__description {
+    &--item {
     }
+  }
 
-    @media (max-width: $tablet){
-        flex-direction: column;
-        padding-top: $sections_padding_top_mobile;
+  &__header {
+    font-family: "Playfair Display", serif;
+
+    @media (max-width: $tablet) {
+      font-size: 1.25rem;
     }
+  }
 
-    &__description {
-        &--item {
+  &__image {
+    @include section-background-image;
+  }
 
-        }
-    }
-
-    &__header {
-        font-family: 'Playfair Display', serif;
-
-        @media (max-width: $tablet){
-            font-size: 1.25rem;
-        }
-    }
-
-    &__image {
-        @include section-background-image;
-    }
-
-    &__text {
-        @include section-text;
-    }
+  &__text {
+    @include section-text;
+  }
 }

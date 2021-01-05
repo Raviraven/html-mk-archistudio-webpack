@@ -2,23 +2,23 @@
 @import "../variables.scss";
 
 .nav-custom {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: white;
-    
-    display: flex;
-    justify-content: center;
-    
-    &__logo {
-        height: $nav_logo_height;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
 
-        @media (max-width: $desktop){
-            height: $nav_logo_tablet_height;
-        }
+  display: flex;
+  justify-content: center;
 
-        @media (max-width: $tablet) {
-            height: $nav_logo_mobile_height;
-        }
+  &__logo {
+    height: $nav_logo_height;
+
+    @media (max-width: $desktop) {
+      height: $nav_logo_tablet_height;
     }
+
+    @media (max-width: $tablet) {
+      height: $nav_logo_mobile_height;
+    }
+  }
 }

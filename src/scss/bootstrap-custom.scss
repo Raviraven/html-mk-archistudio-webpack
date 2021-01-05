@@ -1,13 +1,15 @@
 @import "_variables";
 
-a.contact__socials--link:hover{
-    color: $socials_color;
+a.contact__socials--link:hover {
+  color: $socials_color;
 }
 
-.navigation__list--item, .nav-item > a.nav-link {
-    border-radius: 10px;
+.navigation__list--item,
+.nav-item > a.nav-link {
+  border-radius: 10px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    background-color: $navigation_bulbs_hover;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $navigation_bulbs_hover;
 }

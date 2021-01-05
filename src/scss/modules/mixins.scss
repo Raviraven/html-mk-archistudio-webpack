@@ -1,53 +1,52 @@
-
 @mixin flex-content-left {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    padding: 3rem 5rem 3rem 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-    @media (max-width: $tablet) {
-        padding: 0 1rem 1rem 1rem;
-    }
+  padding: 3rem 5rem 3rem 5rem;
+
+  @media (max-width: $tablet) {
+    padding: 0 1rem 1rem 1rem;
+  }
 }
 
 @mixin flex-content-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    
-    padding: 3rem 5rem 3rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 
-    @media (max-width: $tablet) {
-        padding: 0 1rem 1rem 1rem;
-    }
+  padding: 3rem 5rem 3rem 5rem;
+
+  @media (max-width: $tablet) {
+    padding: 0 1rem 1rem 1rem;
+  }
 }
 
 @mixin section-background-image {
-    z-index: 0;
-    height: 800px;
-    width: 100%;
-    object-fit: cover;
+  z-index: 0;
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
 
-    @media (max-width: $desktop){
-        height: 100%;
-        width: 100%;
-    }
+  @media (max-width: $desktop) {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @mixin section-text {
-    z-index: 1;
-    //background: white;
-    background-color: rgb(255 255 255 / 0.6);
-    
-    position: absolute;
+  z-index: 1;
+  //background: white;
+  background-color: rgb(255 255 255 / 0.6);
 
-    margin: 16px;
-    padding: 16px;
-    border-radius: 16px;
+  position: absolute;
 
-    @media (max-width: $tablet){
-        position: unset;
-        margin: 0;
-    }
+  margin: 16px;
+  padding: 16px;
+  border-radius: 16px;
+
+  @media (max-width: $tablet) {
+    position: unset;
+    margin: 0;
+  }
 }

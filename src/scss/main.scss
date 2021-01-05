@@ -1,16 +1,9 @@
 @import "~normalize.css";
 @import "~bootstrap/scss/bootstrap";
 
-//@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-// @import "~@fortawesome/fontawesome-free/scss/solid.scss";
-
-//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 
 @import "_variables";
 @import "modules/hello.scss";
@@ -24,34 +17,31 @@
 @import "modules/nav-custom.scss";
 @import "modules/address.scss";
 
-
-
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *:before,
-*:after{
-    box-sizing: inherit;
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    //font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
 
-    @media (max-width: $tablet){
-        font-size: 1rem;
-    }
+  @media (max-width: $tablet) {
+    font-size: 1rem;
+  }
 }
 
 .footer {
-    text-align: center;
-    font-size: 0.72rem;
+  text-align: center;
+  font-size: 0.72rem;
 }
 main {
-    position: relative;
+  position: relative;
 }

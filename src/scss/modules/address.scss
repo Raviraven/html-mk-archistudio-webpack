@@ -2,44 +2,42 @@
 @import "../variables.scss";
 
 .address {
-    height: $section_height;
+  height: $section_height;
 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    padding: $nav_logo_height 32px 32px 32px;
+  padding: $nav_logo_height 32px 32px 32px;
 
-    @media (max-width: $desktop){
-        height: auto;
-        padding-top: $sections_padding_top_tablet;
+  @media (max-width: $desktop) {
+    height: auto;
+    padding-top: $sections_padding_top_tablet;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: $sections_padding_top_mobile;
+  }
+
+  &__description {
+  }
+
+  &__header {
+    font-family: "Playfair Display", serif;
+    margin-top: 1rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.25rem;
     }
+  }
 
-    @media (max-width: $tablet){
-        padding-top: $sections_padding_top_mobile;
+  &__link {
+    &--image {
+      @media (max-width: $desktop) {
+        height: 100%;
+        width: 100%;
+      }
     }
-
-    &__description {
-
-    }
-    
-    &__header{
-        font-family: 'Playfair Display', serif;
-        margin-top: 1rem;
-
-        @media (max-width: $tablet){
-            font-size: 1.25rem;
-        }
-    }
-
-    &__link {
-        &--image {
-
-            @media (max-width: $desktop) {
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
+  }
 }

@@ -2,103 +2,102 @@
 @import "../variables.scss";
 
 .contact {
-    height: $section_height;
-    padding-top: $nav_logo_height;
-    
-    text-align: center;
+  height: $section_height;
+  padding-top: $nav_logo_height;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  //use padding OR flex
+  //padding: 128px 0 0 0;
+
+  @media (max-width: $desktop) {
+    height: auto;
+    padding-top: $sections_padding_top_tablet;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: $sections_padding_top_mobile;
+  }
+
+  &__description {
+    margin-bottom: 128px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__header {
+    font-family: "Playfair Display", serif;
+    margin-top: 1rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__socials {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 
-    //use padding OR flex
-    //padding: 128px 0 0 0;
-
-    @media (max-width: $desktop){
-        height: auto;
-        padding-top: $sections_padding_top_tablet;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
     }
 
-    @media (max-width: $tablet){
-        padding-top: $sections_padding_top_mobile;
+    &--description {
     }
 
-    &__description {
-        margin-bottom: 128px;
-
-        @media (max-width: $tablet){
-            margin-bottom: 4rem;
-        }
+    &--header {
+      font-family: "Playfair Display", serif;
     }
 
-    &__header {
-        font-family: 'Playfair Display', serif;
-        margin-top: 1rem;
-        
-        @media (max-width: $tablet){
-            font-size: 1.25rem;
-        }
+    &--link {
+      text-decoration: none;
+      //color: green;
+      color: $socials_color;
+
+      font-size: 40px;
     }
 
-    &__socials {
-        display: flex;
-        justify-content: space-around;
-
-        @media(max-width: $tablet){
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &--description {
-
-        }
-
-        &--header {
-            font-family: 'Playfair Display', serif;
-        }
-
-        &--link{
-            text-decoration: none;
-            //color: green;
-            color: $socials_color;
-
-            font-size: 40px;
-        }
-
-        &--link:before{
-            border-radius: 2.75em;
-            display: inline-block;
-            height: $social_border_size;
-            line-height: $social_border_size;
-            width: $social_border_size;
-            box-shadow: inset 0 0 0 $social_border_box_width  rgb(136, 138, 86);
-        }
-
-        &--link:hover::before {
-            box-shadow: inset 0 0 0 $social_border_box_width  rgb(203, 205, 161);
-        }
-
-        &--social {
-            width: 30%;
-            border-left: 0;
-            border-color:  rgb(203, 205, 161);
-            border-style: solid;
-            border-right-width: 1px;
-            border-top-width: 0;
-            border-bottom-width: 0;
-
-            @media (max-width: $tablet){
-                border: none;
-                padding-bottom: 2rem;
-                width: 100%;
-            }
-
-            &--last {
-                border: none;
-
-                @media (max-width: $tablet) {
-                    padding-bottom: auto;
-                }
-            }
-        }
+    &--link:before {
+      border-radius: 2.75em;
+      display: inline-block;
+      height: $social_border_size;
+      line-height: $social_border_size;
+      width: $social_border_size;
+      box-shadow: inset 0 0 0 $social_border_box_width rgb(136, 138, 86);
     }
+
+    &--link:hover::before {
+      box-shadow: inset 0 0 0 $social_border_box_width rgb(203, 205, 161);
+    }
+
+    &--social {
+      width: 30%;
+      border-left: 0;
+      border-color: rgb(203, 205, 161);
+      border-style: solid;
+      border-right-width: 1px;
+      border-top-width: 0;
+      border-bottom-width: 0;
+
+      @media (max-width: $tablet) {
+        border: none;
+        padding-bottom: 2rem;
+        width: 100%;
+      }
+
+      &--last {
+        border: none;
+
+        @media (max-width: $tablet) {
+          padding-bottom: auto;
+        }
+      }
+    }
+  }
 }

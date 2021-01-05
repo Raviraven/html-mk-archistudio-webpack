@@ -1,47 +1,33 @@
 @import "mixins.scss";
 
 .hello {
-    height: 80vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 
-    padding: 0 5rem 2rem 5rem;
+  padding: 0 5rem 2rem 5rem;
 
-    @media (max-width: $desktop){
-        height: auto;
-    }
+  @media (max-width: $desktop) {
+    height: auto;
+  }
 
-    &__description {
-        // @media (max-width: $tablet){
-        //     font-size: 1rem;
-        // }
-    }
+  &__description {
+  }
 
-    &__footer {
-        // @media (max-width: $tablet){
-        //     font-size: 1rem;
-        // }
-    }
+  &__footer {
+  }
 
-    &__header {
-        
-    }
+  &__header {
+  }
 
-    &__image{
-        @include section-background-image;
-        height: 700px;
-        width: 100%;
+  &__image {
+    @include section-background-image;
+    height: 700px;
+    width: 100%;
+  }
 
-        // @media (max-width: $desktop){
-        //     height: 100%;
-        //     width: 100%;
-        // }
-    }
-
-    &__text {
-        z-index: 1;
-    }
-
+  &__text {
+    z-index: 1;
+  }
 }
