@@ -12,17 +12,18 @@
     <!-- full url to the image with http(s) ie. https://sth.pl/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="" />
   </head>
-  <body>
-    <main id="home">
-      <nav class="nav">
-        <a href="#home">
+  <body data-bs-spy="scroll" data-bs-target="#navigation" >
+    <main id="top">
+      <div class="nav-custom">
+        <a href="#">
           <img
-            class="nav__logo"
+            class="nav-custom__logo"
             alt="MK Archistudio logo"
             src="../assets/img/mkarchistudio_logo.png"
           />
         </a>
-      </nav>
+      </div>
+
       <section id="hello" class="hello">
         <div class="hello__text">
           <p class="hello__description">
@@ -320,22 +321,23 @@
           />
         </a>
       </section>
+
     </main>
 
     <footer class="footer">
       <p>Created by: Michał Kruszewski</p>
     </footer>
 
-    <div class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list--item"><a href="#home">Hello</a></li>
-        <li class="navigation__list--item"><a href="#buildings"></a></li>
-        <li class="navigation__list--item"><a href="#development"></a></li>
-        <li class="navigation__list--item"><a href="#others"></a></li>
-        <li class="navigation__list--item"><a href="#visualizations"></a></li>
-        <li class="navigation__list--item"><a href="#finished"></a></li>
-        <li class="navigation__list--item"><a href="#contact"></a></li>
-        <li class="navigation__list--item"><a href="#address"></a></li>
+    <div id="navigation" class="navigation">
+      <ul class=" navigation__list nav nav-pills">
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#top"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#buildings"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#development"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#others"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#visualizations"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#finished"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#contact"></a></li>
+        <li class="navigation__list--item nav-item"><a class="nav-link" href="#address"></a></li>
       </ul>
     </div>
   </body>

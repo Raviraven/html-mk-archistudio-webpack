@@ -13,11 +13,13 @@
     }
 
     &__list{
+        display: block;
+
         &--item {
             list-style: none;
         }
 
-        &--item > a{
+        &--item > a {
             background: #aaa;
             border-radius: 10px;
             display: block;
@@ -26,12 +28,13 @@
             text-indent: 100%;
             white-space: nowrap;
             width: 15px;
+            padding: 0;
 
             margin-bottom: 16px;
         }
 
         &--item > a:hover{
-            background-color: rgb(136, 138, 86);
+            background-color: $navigation_bulbs_hover;
         }
     }
 }

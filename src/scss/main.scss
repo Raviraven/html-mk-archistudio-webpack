@@ -1,4 +1,6 @@
 @import "~normalize.css";
+@import "~bootstrap/scss/bootstrap";
+
 //@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
@@ -9,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
+
 @import "_variables";
 @import "modules/hello.scss";
 @import "modules/buildings.scss";
@@ -18,10 +21,10 @@
 @import "modules/finished.scss";
 @import "modules/contact.scss";
 @import "modules/navigation.scss";
-@import "modules/nav.scss";
+@import "modules/nav-custom.scss";
 @import "modules/address.scss";
 
-@import "~bootstrap/scss/bootstrap";
+
 
 html {
     box-sizing: border-box;
@@ -38,6 +41,7 @@ body {
     //font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    position: relative;
 
     @media (max-width: $tablet){
         font-size: 1rem;
@@ -48,28 +52,6 @@ body {
     text-align: center;
     font-size: 0.72rem;
 }
-
-// h2 {
-//     display: block;
-//     font-size: 1.5em;
-//     margin-block-start: 0.83em;
-//     margin-block-end: 0.83em;
-//     margin-inline-start: 0px;
-//     margin-inline-end: 0px;
-//     font-weight: bold;
-// }
-
-// h3 {
-//     display: block;
-//     font-size: 1.17em;
-//     margin-block-start: 1em;
-//     margin-block-end: 1em;
-//     margin-inline-start: 0px;
-//     margin-inline-end: 0px;
-//     font-weight: bold;
-// }
-
-// p {
-//     margin-block-start: 1em;
-//     margin-block-end: 1em;
-// }
+main {
+    position: relative;
+}
