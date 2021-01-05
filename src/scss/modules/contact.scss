@@ -3,7 +3,7 @@
 
 .contact {
   height: $section_height;
-  padding-top: $nav_logo_height;
+  padding: $nav_logo_height 3rem;
 
   text-align: center;
   display: flex;
@@ -53,6 +53,7 @@
 
     &--header {
       font-family: "Playfair Display", serif;
+      margin-top: 1rem;
     }
 
     &--link {

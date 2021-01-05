@@ -6,19 +6,14 @@
   display: flex;
   flex-direction: column;
 
-  padding: 0 5rem 2rem 5rem;
+  padding: 1rem 5rem 2rem 5rem;
 
   @media (max-width: $desktop) {
     height: auto;
   }
 
-  &__description {
-  }
-
-  &__footer {
-  }
-
-  &__header {
+  @media (max-width: $tablet) {
+    padding: 1rem;
   }
 
   &__image {
@@ -29,5 +24,12 @@
 
   &__text {
     z-index: 1;
+  }
+}
+
+#hello__description--link--break::after {
+  @media (min-width: $tablet) {
+    content: "\a";
+    white-space: pre;
   }
 }
