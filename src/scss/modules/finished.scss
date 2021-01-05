@@ -6,11 +6,11 @@
     padding-top: $nav_logo_height;
 
     @media (max-width: $desktop){
-        padding-top: $nav_logo_tablet_height;
+        padding-top: $sections_padding_top_tablet;
     }
 
     @media (max-width: $tablet){
-        padding-top: $nav_logo_mobile_height;
+        padding-top: $sections_padding_top_mobile;
     }
 
     &__description{

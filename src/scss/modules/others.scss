@@ -9,12 +9,12 @@
 
     @media (max-width: $desktop){
         height: auto;
-        padding-top: $nav_logo_tablet_height;
+        padding-top: $sections_padding_top_tablet;
     }
 
     @media (max-width: $tablet){
         flex-direction: column;
-        padding-top: $nav_logo_mobile_height;
+        padding-top: $sections_padding_top_mobile;
     }
 
     &__description {
