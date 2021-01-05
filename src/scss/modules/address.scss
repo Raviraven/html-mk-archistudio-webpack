@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
 
-    padding: 10rem 32px 32px 32px;
+    padding: $nav_logo_height 32px 32px 32px;
 
     @media (max-width: $desktop){
         height: auto;
