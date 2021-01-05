@@ -32,7 +32,8 @@
 
     &__header {
         font-family: 'Playfair Display', serif;
-
+        margin-top: 1rem;
+        
         @media (max-width: $tablet){
             font-size: 1.25rem;
         }
