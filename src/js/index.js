@@ -1,7 +1,6 @@
 import '../scss/main.scss';
+//import 'bootstrap';
 
-import { Tooltip, Toast, Popover } from 'bootstrap';
-//import Alert from 'bootstrap/js/dist/alert';
-
+import {Modal, Carousel} from 'bootstrap';
 
 console.log('Welcome to the dark side 😈')
