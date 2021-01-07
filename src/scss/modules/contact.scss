@@ -49,6 +49,12 @@
     }
 
     &--description {
+      text-decoration: none;
+      color: #212529;
+    }
+
+    a.contact__socials--description:hover {
+      color: rgb(203, 205, 161);
     }
 
     &--header {
