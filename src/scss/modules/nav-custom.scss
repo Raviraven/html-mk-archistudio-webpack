@@ -1,14 +1,71 @@
 @import "mixins.scss";
 @import "../variables.scss";
 
+$navbar-section-width: 220px;
+$navbar-facebook-font: 40px;
+$navbar-facebook-radius: 2.75em;
+
 .nav-custom {
   position: sticky;
   top: 0;
   z-index: 10;
   background: white;
+  padding: 0 $sections_padding_sides_pc 0 $sections_padding_sides_pc;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    padding: 0 $sections_padding_sides_mobile 0 $sections_padding_sides_mobile;
+  }
+
+  &__left {
+    width: $navbar-section-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
+    &--link {
+      color: $socials_text_color;
+      text-decoration: none;
+    }
+
+    &--link:hover {
+      color: $socials_text_color_hover;
+    }
+  }
+
+  &__right {
+    width: $navbar-section-width;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      width: auto;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $socials_text_color; //#888a56;
+      font-size: $navbar-facebook-font;
+      text-align: center;
+
+      @media (max-width: $tablet) {
+        margin-left: 0.5rem;
+        font-size: 1.75rem;
+      }
+    }
+
+    &--link:hover {
+      color: $socials_text_color_hover;
+    }
+  }
 
   &__logo {
     height: $nav_logo_height;

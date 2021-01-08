@@ -42,12 +42,20 @@ main {
   position: relative;
 }
 
+.mobile-only {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: inline-block;
+  }
+}
+
 .footer {
   text-align: center;
   font-size: 0.72rem;
 
   &__link {
     text-decoration: none;
-    color: #212529;
+    color: $socials_text_color;
   }
 }

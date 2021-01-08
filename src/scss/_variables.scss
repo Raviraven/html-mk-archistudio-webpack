@@ -10,8 +10,17 @@ $nav_logo_mobile_height: 5rem;
 $sections_padding_top_tablet: 6rem; //change to 3 if navigation bulbs hidden
 $sections_padding_top_mobile: 1rem;
 
+$sections_padding_sides_pc: 5rem;
+$sections_padding_sides_tablet: 3rem;
+$sections_padding_sides_mobile: 1rem;
+
 $desktop: 960px;
 $tablet: 768px;
 
+//used not only for navigation bulbs, contact icons also
 $navigation_bulbs_hover: rgb(136, 138, 86);
-$socials_color: rgb(136, 138, 86);
+$socials_icon_color: rgb(136, 138, 86);
+$socials_icon_color_hover: rgb(203, 205, 161);
+
+$socials_text_color:  #212529;
+$socials_text_color_hover: rgb(203, 205, 161);

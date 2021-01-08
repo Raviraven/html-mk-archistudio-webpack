@@ -3,10 +3,11 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  padding: 3rem 5rem 3rem 5rem;
+  padding: 3rem $sections_padding_sides_pc 3rem $sections_padding_sides_pc;
 
   @media (max-width: $tablet) {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 $sections_padding_sides_mobile 1rem
+      $sections_padding_sides_mobile;
   }
 }
 
@@ -15,10 +16,11 @@
   justify-content: flex-end;
   align-items: flex-start;
 
-  padding: 3rem 5rem 3rem 5rem;
+  padding: 3rem $sections_padding_sides_pc 3rem $sections_padding_sides_pc;
 
   @media (max-width: $tablet) {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 $sections_padding_sides_mobile 1rem
+      $sections_padding_sides_mobile;
   }
 }
 

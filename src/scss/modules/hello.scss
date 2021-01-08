@@ -1,12 +1,11 @@
 @import "mixins.scss";
 
 .hello {
-  height: 80vh;
   text-align: center;
   display: flex;
   flex-direction: column;
 
-  padding: 1rem 5rem 2rem 5rem;
+  padding: 1rem $sections_padding_sides_pc 2rem $sections_padding_sides_pc;
 
   @media (max-width: $desktop) {
     height: auto;
