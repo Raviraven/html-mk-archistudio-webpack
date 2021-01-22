@@ -38,15 +38,17 @@
       padding: 1rem;
     }
 
-    &--image {
-      //height: 25%;
-      width: 40%;
+    &--button {
+      padding: 0;
       margin: 8px;
+      border: none;
+    }
+
+    &--image {
       height: 300px;
       object-fit: cover;
-      cursor: pointer;
 
-      @media (max-width: $tablet) {
+      @media (max-width: $desktop) {
         width: 100%;
         margin: 0 0 8px 0;
         height: auto;
@@ -54,6 +56,7 @@
     }
   }
 
+  //no longer in usage
   &__modal {
     display: flex;
     align-items: center;
