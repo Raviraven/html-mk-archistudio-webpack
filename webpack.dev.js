@@ -1,15 +1,14 @@
-const merge = require("webpack-merge");
-const common = require("./webpack.common.js");
+const {merge} = require("webpack-merge");
+const common = require("./webpack.config");
 
 module.exports = merge(common, {
   devtool: "source-map",
   mode: "development",
-
   module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
-        loader: [
+        use: [
           "style-loader",
           {
             loader: "css-loader",
@@ -27,7 +26,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.css$/i,
-        loader: [
+        use: [
           "style-loader",
           {
             loader: "css-loader",
@@ -42,6 +41,9 @@ module.exports = merge(common, {
 
   devServer: {
     port: 8080,
-    host: '127.0.0.1'
+    host: '127.0.0.1',
+    open: true,
+    liveReload: true,
+    hot: false
   },
 });
