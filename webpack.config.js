@@ -1,24 +1,23 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  /* here you can define another js file */
   entry: {
     index: "./src/js/index.js"
   },
   output: {
     filename: "[name].[hash:8].js",
-    path: __dirname + "/dist",
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
       {
         test: [/.js$/],
-        exclude: /(node_modules)/,
+        // exclude: /(.yarn)/,
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"],
+            presets: [["@babel/preset-env", {targets: "defaults"}]],
           },
         },
       },
@@ -26,7 +25,7 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
         options: {
-          attributes: {
+          sources: {
             list: [
               {
                 tag: "img",
@@ -44,53 +43,30 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "img/[name].[hash:8].[ext]",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "img/[name].[hash:8].[ext]",
+        },
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-            }
-          }
-        ]
+
+        type: "asset/resource",
+        generator: {
+          filename: "[name].[ext]",
+        }
       },
     ],
   },
-
   devServer: {
-    port: 8080,
+    port: 8080
   },
-
   plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: "public",
-          globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
-          },
-        },
-      ],
-    }),
-
-    /* here you can define another html file and its dependencies */
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
       chunks: ["index"],
-      filename: "index.html",
-    }),
+      filename: "index.html"
+    })
   ],
 };
