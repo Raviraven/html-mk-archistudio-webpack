@@ -44,6 +44,6 @@ module.exports = merge(common, {
     host: '127.0.0.1',
     open: true,
     liveReload: true,
-  hot: false
+    hot: false
   },
 });

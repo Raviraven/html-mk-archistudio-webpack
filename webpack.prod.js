@@ -1,6 +1,8 @@
 const {merge} = require("webpack-merge");
 const common = require("./webpack.config");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+const OptimizeCssAssetPlugin = require("optimize-css-assets-webpack-plugin");
 
 
 module.exports = merge(common, {
@@ -12,6 +14,7 @@ module.exports = merge(common, {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
+          "postcss-loader",
           "sass-loader"
         ],
       },
@@ -30,5 +33,9 @@ module.exports = merge(common, {
       filename: "[name].[hash:8].css",
       chunkFilename: "[id].css"
     }),
-  ]
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin(), new OptimizeCssAssetPlugin()]
+  }
 });

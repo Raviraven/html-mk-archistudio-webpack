@@ -1,5 +1,6 @@
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -62,6 +63,20 @@ module.exports = {
     port: 8080
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "src", to: "dist", globOptions: {
+            gitignore: true
+          }
+        },
+        {
+          from: "public", to: "dist", globOptions: {
+            gitignore: true
+          }
+        },
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
