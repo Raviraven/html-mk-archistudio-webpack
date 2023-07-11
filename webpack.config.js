@@ -66,12 +66,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: "src", to: "dist", globOptions: {
-            gitignore: true
-          }
-        },
-        {
-          from: "public", to: "dist", globOptions: {
+          from: "public", globOptions: {
             gitignore: true
           }
         },
