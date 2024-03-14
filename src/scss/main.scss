@@ -7,15 +7,16 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import "modules/passive-buildings";
 @import "modules/buildings.scss";
 @import "modules/development.scss";
 @import "modules/others.scss";
-@import "modules/visualizations.scss";
+// @import "modules/visualizations.scss";
 @import "modules/finished.scss";
 @import "modules/contact.scss";
 @import "modules/navigation.scss";
 @import "modules/nav-custom.scss";
-@import "modules/address.scss";
+// @import "modules/address.scss";
 
 html {
   box-sizing: border-box;
